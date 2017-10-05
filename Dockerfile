@@ -13,7 +13,7 @@ RUN yum -y install \
   zlib-devel \
   && yum clean all
 
-RUN curl -kL https://bootstrap.pypa.io/get-pip.py | python
+RUN curl -kL https://bootstrap.pypa.io/get-pip.py | python \
  && pip install future
 
 RUN curl -L https://github.com/downloads/taoliu/MACS/MACS-1.4.2-1.tar.gz | tar zxf - \
